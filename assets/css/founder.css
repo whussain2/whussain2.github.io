@@ -1638,3 +1638,27 @@ body.founder-site {
     font-size: 6rem;
   }
 }
+
+.craft__card--breeding {
+  justify-content: flex-start;
+}
+
+.craft__card--breeding .craft__icon {
+  position: static;
+}
+
+.craft__card--breeding h3 {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .craft__card--breeding {
+    min-height: 0;
+  }
+
+  .craft__card--breeding h3 {
+    padding-top: 0;
+    margin-top: 1.5rem;
+  }
+}
