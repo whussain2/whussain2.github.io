@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "Home"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
@@ -18,3 +21,5 @@ main:
   - title: "RPlantBreeding"
     url: /rplantbreeding/
 
+  - title: "PlantNura"
+    url: https://plantnura.com/
