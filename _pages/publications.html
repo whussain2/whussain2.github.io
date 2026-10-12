@@ -25,7 +25,7 @@ thumbs:
   "2011-01-01": sanghera_2011_current_genomics_journal.jpg
 ---
 {% assign pubs = site.publications | sort: "date" | reverse %}
-{% assign oldest = pubs | last %}{% assign newest = pubs | first %}
+{% assign oldest = pubs | last %}{% assign newest = pubs | first %}{% assign recent = pubs | slice: 0, 6 %}{% assign shown_last = recent | last %}
 <div class="site-shell">
   <div class="ambient ambient--violet" aria-hidden="true"></div>
   <div class="ambient ambient--aqua" aria-hidden="true"></div>
@@ -55,7 +55,7 @@ thumbs:
         <span class="scholar-card__label">Google Scholar</span>
         <strong>Always-current citations, h-index and every new paper.</strong>
         <span class="scholar-card__stats">
-          <span><b>{{ pubs.size }}</b>papers listed here</span>
+          <span><b>All</b>papers &amp; citations</span>
           <span><b>{{ oldest.date | date: "%Y" }}–{{ "now" | date: "%Y" }}</b>research span</span>
         </span>
         <span class="scholar-card__cta">Open profile <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -65,13 +65,13 @@ thumbs:
     <section class="pub-list">
       <div class="wrap">
         <div class="pub-list__head reveal">
-          <h2>Selected peer-reviewed work</h2>
-          <p>Highlights from {{ oldest.date | date: "%Y" }}–{{ newest.date | date: "%Y" }}. For the newest papers and live citation counts, see <a href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a></p>
+          <h2>Recent publications</h2>
+          <p>A few of my recent papers. For the complete list, the newest work and live citation counts, see <a href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a></p>
         </div>
 
         <ol class="pubs">
         {% assign current_year = "" %}
-        {% for post in pubs %}
+        {% for post in recent %}
           {% assign year = post.date | date: "%Y" %}
           {% assign key = post.date | date: "%Y-%m-%d" %}
           {% assign thumb = page.thumbs[key] %}
@@ -95,8 +95,8 @@ thumbs:
 
         <a class="scholar-banner reveal" href="{{ page.scholar }}" target="_blank" rel="noopener">
           <span>
-            <small>Looking for something newer?</small>
-            My complete, up-to-date publication record lives on Google Scholar.
+            <small>See the full record</small>
+            Every paper, citation count and new publication lives on Google Scholar.
           </span>
           <span class="button button--primary">Open Google Scholar ↗</span>
         </a>
