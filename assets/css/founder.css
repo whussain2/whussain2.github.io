@@ -1324,3 +1324,29 @@ body.founder-site {
   font-size: 0.72rem;
   font-weight: 700;
 }
+
+.founder-site .pub__tile {
+  overflow: hidden;
+  color: #fff;
+}
+
+.pub__tile small {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+@media (max-width: 700px) {
+  .pub__tile {
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+  }
+
+  .pub__tile span {
+    font-size: 1.05rem;
+  }
+
+  .pub__tile small {
+    display: none;
+  }
+}
