@@ -12,26 +12,7 @@ redirect_from:
   <div class="ambient ambient--violet" aria-hidden="true"></div>
   <div class="ambient ambient--aqua" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Waseem Hussain, home">
-        <span class="brand__mark" aria-hidden="true">WH</span>
-        <span class="brand__text">Dr. Waseem Hussain</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-          <path d="M4 7h16M4 12h16M4 17h16"></path>
-        </svg>
-      </button>
-      <ul class="nav__links" id="primary-menu">
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#plantnura">PlantNura</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="/publications/">Research</a></li>
-        <li><a class="nav__company" href="https://plantnura.com/" target="_blank" rel="noopener">Visit PlantNura ↗</a></li>
-      </ul>
-    </nav>
-  </header>
+{% include founder-header.html %}
 
   <main id="main-content">
     <section class="hero wrap" id="top">
@@ -52,7 +33,7 @@ redirect_from:
 
       <div class="hero__visual reveal">
         <div class="portrait-frame">
-          <img src="/images/profile.png" alt="Dr. Waseem Hussain" width="1828" height="2760">
+          <img src="https://plantnura.com/assets/images/people/team/waseem-hussain-1200.webp" alt="Dr. Waseem Hussain, Founder &amp; CEO of PlantNura" width="1200" height="1383" fetchpriority="high" onerror="this.onerror=null;this.src='/images/profile.png'">
           <div class="portrait__caption">
             <p><strong>Waseem Hussain</strong>Hyderabad · India</p>
             <span class="status-dot" aria-label="Open to purposeful collaboration"></span>
@@ -78,8 +59,8 @@ redirect_from:
     <section class="venture" id="plantnura">
       <div class="wrap">
         <div class="venture__identity reveal">
-          <span class="venture__monogram" aria-hidden="true">PN</span>
-          <p><strong>PlantNura</strong>Innovate · Educate · Transform</p>
+          <a class="venture__logo" href="https://plantnura.com/" target="_blank" rel="noopener"><img src="https://plantnura.com/assets/logos/plantnura.webp" alt="PlantNura" width="549" height="170" onerror="this.onerror=null;this.src='/images/plantnura-mark.svg'"></a>
+          <p><strong>Innovate · Educate · Transform</strong>Education · Software · Consultancy</p>
         </div>
         <div class="section-heading reveal">
           <h2>Elite breeding science, made useful.</h2>
