@@ -1350,3 +1350,291 @@ body.founder-site {
     display: none;
   }
 }
+
+/* ---------- Journey: timeline ---------- */
+.track-record h2 em {
+  background: linear-gradient(100deg, var(--violet), var(--aqua));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 0.55rem;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(155, 109, 255, 0.15), var(--violet) 35%, var(--aqua));
+  content: "";
+}
+
+.milestone {
+  position: relative;
+  padding-top: 2.6rem;
+}
+
+.milestone__node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 3px solid var(--night);
+  border-radius: 50%;
+  background: var(--violet);
+  box-shadow: 0 0 0 1px rgba(155, 109, 255, 0.6), 0 0 18px rgba(155, 109, 255, 0.55);
+}
+
+.milestone--now .milestone__node {
+  background: var(--aqua);
+  box-shadow: 0 0 0 1px rgba(80, 232, 220, 0.6), 0 0 22px rgba(80, 232, 220, 0.7);
+  animation: pulse-node 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-node {
+  50% { box-shadow: 0 0 0 7px rgba(80, 232, 220, 0.12), 0 0 30px rgba(80, 232, 220, 0.8); }
+}
+
+.milestone__when {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.milestone__badge {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid rgba(155, 109, 255, 0.45);
+  border-radius: 999px;
+  background: rgba(155, 109, 255, 0.12);
+  color: #cdb8ff;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.milestone--now .milestone__badge {
+  border-color: rgba(80, 232, 220, 0.5);
+  background: rgba(80, 232, 220, 0.12);
+  color: var(--aqua);
+}
+
+.milestone h3 {
+  margin: 0.9rem 0 0.25rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.milestone__where {
+  margin: 0 0 0.8rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.milestone p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Journey: what I bring ---------- */
+.craft {
+  margin-top: 6rem;
+}
+
+.craft__label {
+  margin: 0 0 1.5rem;
+  color: var(--aqua);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.craft__grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+
+.craft__card {
+  --accent: var(--violet);
+  position: relative;
+  overflow: hidden;
+  padding: 2.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 50%),
+    var(--night-soft);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.craft__card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.craft__card--breeding {
+  --accent: #6ee7a8;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 26rem;
+}
+
+.craft__card--software {
+  --accent: var(--violet);
+}
+
+.craft__card--venture {
+  --accent: var(--aqua);
+}
+
+.craft__icon {
+  display: grid;
+  width: 3.4rem;
+  height: 3.4rem;
+  place-items: center;
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent);
+}
+
+.craft__card--breeding .craft__icon {
+  position: absolute;
+  top: 2.2rem;
+  left: 2.2rem;
+}
+
+.craft__num {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.6rem;
+  color: transparent;
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.craft__card--breeding .craft__num {
+  font-size: 9rem;
+}
+
+.craft__card h3 {
+  margin: 1.5rem 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  letter-spacing: -0.04em;
+}
+
+.craft__card--breeding h3 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.craft__card p {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.craft__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.craft__tags li {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--accent) 85%, white);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .timeline {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .milestone {
+    padding-top: 2rem;
+    border-top: 2px solid rgba(155, 109, 255, 0.35);
+  }
+
+  .milestone__node {
+    top: -0.65rem;
+  }
+
+  .craft__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .craft__card--breeding {
+    grid-row: auto;
+    min-height: 22rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-left: 0.5rem;
+    border-left: 2px solid rgba(155, 109, 255, 0.45);
+  }
+
+  .milestone {
+    padding: 0 0 2.5rem 1.75rem;
+    border-top: 0;
+  }
+
+  .milestone__node {
+    top: 0.1rem;
+    left: -0.65rem;
+  }
+
+  .craft__card {
+    padding: 1.75rem;
+  }
+
+  .craft__card--breeding .craft__num {
+    font-size: 6rem;
+  }
+}

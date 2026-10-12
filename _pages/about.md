@@ -94,39 +94,80 @@ redirect_from:
         <div class="track-record__intro reveal">
           <div>
             <span class="section-index">02 · The journey</span>
-            <h2>Researcher.<br>Builder.<br>Founder.</h2>
+            <h2>From the field<br>to the <em>founder’s</em> desk.</h2>
           </div>
           <div>
-            <p>From breeding climate-resilient rice to developing interactive scientific software and building PlantNura, my work sits where research excellence meets real-world application.</p>
-            <a class="text-link" href="/cv/">View full curriculum vitae <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+            <p>Training in plant breeding, a deep grounding in quantitative genetics, and years leading breeding programmes at IRRI — each step built the foundation PlantNura stands on.</p>
           </div>
         </div>
 
-        <div class="journey">
-          <article class="journey__item reveal">
-            <span class="journey__meta">Plant breeding</span>
-            <h3>Climate-resilient crop improvement</h3>
-            <p>Worked within IRRI’s Rice Breeding Innovation Platform on salinity, drought, and flood tolerance — connecting genomic prediction with breeding decisions.</p>
-          </article>
-          <article class="journey__item reveal">
-            <span class="journey__meta">Scientific software</span>
-            <h3>Making complex analysis interactive</h3>
-            <p>Built ShinyAIM during postdoctoral research at the University of Nebraska–Lincoln, bringing longitudinal GWAS exploration into an accessible interface.</p>
-          </article>
-          <article class="journey__item reveal">
-            <span class="journey__meta">Entrepreneurship</span>
-            <h3>Building PlantNura</h3>
-            <p>Leading an integrated education, software, and consultancy company dedicated to moving breeding science forward.</p>
-          </article>
-        </div>
+        <ol class="timeline">
+          <li class="milestone reveal">
+            <span class="milestone__node" aria-hidden="true"></span>
+            <span class="milestone__when">2014 – 2017</span>
+            <span class="milestone__badge">Ph.D.</span>
+            <h3>Plant Breeding &amp; Genetics</h3>
+            <p class="milestone__where">University of Nebraska–Lincoln</p>
+            <p>Doctorate in Agronomy, specialising in plant breeding and genetics, as an ICAR International Fellow — mapping drought-adaptive traits in winter wheat.</p>
+          </li>
+          <li class="milestone reveal">
+            <span class="milestone__node" aria-hidden="true"></span>
+            <span class="milestone__when">2018 – 2019</span>
+            <span class="milestone__badge">Postdoc</span>
+            <h3>Quantitative Genetics</h3>
+            <p class="milestone__where">Dept. of Animal Science, University of Nebraska–Lincoln</p>
+            <p>Statistical and quantitative genetics across plants and animals — and ShinyAIM, my first interactive Shiny application for longitudinal GWAS.</p>
+          </li>
+          <li class="milestone reveal">
+            <span class="milestone__node" aria-hidden="true"></span>
+            <span class="milestone__when">2019 onwards</span>
+            <span class="milestone__badge">Scientist</span>
+            <h3>Rice Breeding</h3>
+            <p class="milestone__where">International Rice Research Institute (IRRI)</p>
+            <p>Rice Breeding Innovation Platform: salinity, drought and flood-tolerance programmes, genomic selection, genetic-gain tracking, and teaching genomic prediction.</p>
+          </li>
+          <li class="milestone milestone--now reveal">
+            <span class="milestone__node" aria-hidden="true"></span>
+            <span class="milestone__when">Today</span>
+            <span class="milestone__badge">Founder &amp; CEO</span>
+            <h3>PlantNura</h3>
+            <p class="milestone__where">Education · Software · Consultancy</p>
+            <p>Turning everything above into courses, no-code software and consultancy any breeding programme can use.</p>
+          </li>
+        </ol>
 
-        <nav class="archive-links reveal" aria-label="Professional archives">
-          <a href="/publications/">Publications</a>
-          <a href="/talks/">Talks</a>
-          <a href="/teaching/">Teaching</a>
-          <a href="/resources/">Open resources</a>
-          <a href="https://orcid.org/0000-0002-6861-0193" target="_blank" rel="noopener">ORCID ↗</a>
-        </nav>
+        <div class="craft">
+          <p class="craft__label reveal">What I bring</p>
+          <div class="craft__grid">
+            <article class="craft__card craft__card--breeding reveal">
+              <span class="craft__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V10"/><path d="M12 10C12 6 9 3.5 5 3.5c0 4 2.5 6.5 7 6.5Z"/><path d="M12 14c0-3.5 2.7-6 7-6 0 3.8-2.6 6-7 6Z"/><path d="M8 21h8"/></svg>
+              </span>
+              <span class="craft__num">01</span>
+              <h3>Plant breeding</h3>
+              <p>Climate-resilient crop improvement — designing breeding strategies, measuring genetic gain and putting genomic selection to work in real programmes.</p>
+              <ul class="craft__tags"><li>Rice &amp; wheat</li><li>Genomic selection</li><li>Stress tolerance</li></ul>
+            </article>
+            <article class="craft__card craft__card--software reveal">
+              <span class="craft__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m13.5 5-3 14"/></svg>
+              </span>
+              <span class="craft__num">02</span>
+              <h3>Scientific software</h3>
+              <p>Interactive tools and open pipelines that make complex analysis visual, reproducible and usable without code.</p>
+              <ul class="craft__tags"><li>R &amp; Shiny</li><li>ShinyAIM</li><li>Open pipelines</li></ul>
+            </article>
+            <article class="craft__card craft__card--venture reveal">
+              <span class="craft__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.3-2 4-2 6 2 0 4.7-.5 6-2"/><path d="M14 4c3-1 6-1 6-1s0 3-1 6l-6.5 6.5-4-4Z"/><path d="M9.5 10.5 6 10l-3 3 4 1"/><path d="m13.5 14.5.5 3.5-3 3-1-4"/></svg>
+              </span>
+              <span class="craft__num">03</span>
+              <h3>Entrepreneurship</h3>
+              <p>Building PlantNura — an integrated company bringing elite breeding science to every scientist, everywhere.</p>
+              <ul class="craft__tags"><li>Education</li><li>Software</li><li>Consultancy</li></ul>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
