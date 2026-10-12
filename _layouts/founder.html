@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ base_path }}/assets/css/founder.css">
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/founder.css?v={{ site.time | date: "%s" }}">
     <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png">
     {% if page.permalink == "/" %}<link rel="preload" as="image" href="https://plantnura.com/assets/images/people/team/waseem-hussain-1200.webp">{% endif %}
     <script>
@@ -23,6 +23,6 @@
   <body class="founder-site">
     <a class="skip-link" href="#main-content">Skip to content</a>
     {{ content }}
-    <script src="{{ base_path }}/assets/js/founder.js" defer></script>
+    <script src="{{ base_path }}/assets/js/founder.js?v={{ site.time | date: "%s" }}" defer></script>
   </body>
 </html>
