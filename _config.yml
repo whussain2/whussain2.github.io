@@ -89,7 +89,7 @@ author:
   bio              : "Founder & CEO at PlantNura · Quantitative Geneticist · Plant Breeder"
   location         : "Hyderabad, India"
   employer         :
-  googlescholar    : "https://scholar.google.com/citations?user=ECbwMvkAAAAJ&hl=en"
+  googlescholar    : # old profile link no longer works; add the new one here
   email            : "waseemhussain907@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Waseem_Hussain2"
   uri              :

@@ -125,7 +125,6 @@ redirect_from:
           <a href="/talks/">Talks</a>
           <a href="/teaching/">Teaching</a>
           <a href="/resources/">Open resources</a>
-          <a href="https://scholar.google.com/citations?user=ECbwMvkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
           <a href="https://orcid.org/0000-0002-6861-0193" target="_blank" rel="noopener">ORCID ↗</a>
         </nav>
       </div>
