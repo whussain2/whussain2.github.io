@@ -187,7 +187,6 @@ redirect_from:
           <div class="site-footer__links">
             <a href="https://github.com/whussain2" target="_blank" rel="noopener">GitHub</a>
             <a href="https://plantnura.com/" target="_blank" rel="noopener">PlantNura</a>
-            <a href="/sitemap/">Sitemap</a>
           </div>
         </footer>
       </div>
